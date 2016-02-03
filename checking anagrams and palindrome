@@ -1,0 +1,27 @@
+#checking anagrams
+a = 'mtaa'
+b = 'aam'
+a =list(a)
+b = list(b)
+if len(a) != len(b):
+    print False
+else:
+    for i in a:
+        if i in b:
+            b.remove(i)
+            
+    if len(b) == 0:
+        print True
+        
+    else:
+        print False
+
+
+#checking palindrome
+a = 'madammp'
+
+
+if a == a[::-1]: #note: string[::-1] reverses a string in python
+    print True
+else:
+    print False
